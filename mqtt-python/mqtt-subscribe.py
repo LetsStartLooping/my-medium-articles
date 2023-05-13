@@ -8,7 +8,7 @@ def on_connect(client, userdata, flags, rc):
         print("Successfully Connected!\n")
         # At this point we can subscribe to the topics
         # Subscribe to the MQTT topic
-        client.subscribe("test_topic")
+        client.subscribe("temperature")
         client.subscribe("test_topic_2")
     else:
         print('Not Able to connect!')

@@ -8,10 +8,10 @@ broker_address = os.environ['MQTT_BROKER_ADDRESS']
 # An MQTT topic can be anything as a string,
 # Like for a temprature reading you can use 'temperature' as topic
 # Or for Living Room temperature reading you can use 'temperature_living_room'
-topic = "test_topic_2"
+topic = "test_topic"
 
 # Message to be Published
-message = "Hi! there! I am a message MQTT - 2"
+message = "Hi Pico! This is Pi here!"
 
 # This function gets called when we try to connect to MQTT Broker
 def on_connect(client, userdata, flags, rc):
